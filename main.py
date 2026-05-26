@@ -5,7 +5,7 @@ from fastapi import FastAPI, Depends, HTTPException, status, Header
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from app.config import get_settings
+from config import get_settings
 from app.database import get_supabase_client
 from app.models import (
     UserSignup,
