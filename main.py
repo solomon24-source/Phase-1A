@@ -7,7 +7,7 @@ from fastapi.responses import JSONResponse
 
 from config import get_settings
 from database import get_supabase_client
-from app.models import (
+from models import (
     UserSignup,
     UserLogin,
     UserResponse,
