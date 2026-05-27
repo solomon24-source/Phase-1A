@@ -4,7 +4,8 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, Depends, HTTPException, status, Header
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 from config import get_settings
 from database import get_supabase_client
 from models import (
