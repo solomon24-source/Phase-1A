@@ -15,7 +15,7 @@ from models import (
     MessageResponse,
     SubscriptionResponse
 )
-from app.auth_service import (
+from auth_service import signup_user, login_user, get_current_user, logout_user
     signup_user,
     login_user,
     get_current_user,
