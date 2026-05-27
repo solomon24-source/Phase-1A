@@ -2,7 +2,7 @@ from typing import Optional
 from supabase import Client
 from fastapi import HTTPException, status
 import logging
-from app.models import UserResponse
+from models import UserResponse
 
 logger = logging.getLogger(__name__)
 
