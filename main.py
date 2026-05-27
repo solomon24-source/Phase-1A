@@ -15,15 +15,14 @@ from models import (
     MessageResponse,
     SubscriptionResponse
 )
-from auth_service import signup_user, login_user, get_current_user, logout_user
+from auth_service import (
     signup_user,
     login_user,
     get_current_user,
     logout_user
 )
 
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+
 
 
 @asynccontextmanager
