@@ -72,8 +72,7 @@ async def get_current_user(auth_header: str) -> UserResponse:
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
                 detail="Invalid authentication header"
-            )
-
+           )     
         token = parts[1]
 
         from app.database import get_supabase_client
